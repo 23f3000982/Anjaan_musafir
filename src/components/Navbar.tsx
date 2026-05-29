@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
 import { Menu, X, Bike, Compass } from 'lucide-react';
-import { BrandTheme } from '../app/types';
+import Image from 'next/image';
 
-interface NavbarProps {
-  activeTheme: BrandTheme;
-  setActiveTheme: (theme: BrandTheme) => void;
-  openBookingModal: (id: string) => void;
-}
 
-export default function Navbar({ activeTheme, setActiveTheme, openBookingModal }: NavbarProps) {
+
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
@@ -28,7 +24,7 @@ export default function Navbar({ activeTheme, setActiveTheme, openBookingModal }
           {/* Brand Logo */}
           <div className="logo-wrap" id="brand-logo-container">
             <div className="logo-graphic" id="logo-graphic-visual">
-              <img src="/logo.jpeg" alt="Befikar Bikers Logo" size={22} />
+              <Image src="/logo.jpeg" alt="Logo" width={22} height={22} />
             </div>
 
           </div>
@@ -92,10 +88,10 @@ export default function Navbar({ activeTheme, setActiveTheme, openBookingModal }
         <div className="mobile-nav-header">
           <div className="logo-wrap">
             <div className="logo-graphic">
-              {activeTheme === 'riders' ? <Bike size={18} /> : <Compass size={18} />}
+              <Image src="/logo.jpeg" alt="Logo" width={22} height={22} />
             </div>
             <span className="logo-text" style={{ fontSize: '18px' }}>
-              {activeTheme === 'riders' ? 'Befikar' : 'Anjan Musafir'}
+              Anjan Musafir
             </span>
           </div>
           <button
@@ -114,16 +110,7 @@ export default function Navbar({ activeTheme, setActiveTheme, openBookingModal }
           <a href="#tour-gallery" className="nav-link" onClick={(e) => { e.preventDefault(); handleLinkClick('#tour-gallery'); }}>Gallery</a>
           <a href="#faq-accordions" className="nav-link" onClick={(e) => { e.preventDefault(); handleLinkClick('#faq-accordions'); }}>FAQ</a>
           <a href="#contact-headquarters" className="nav-link" onClick={(e) => { e.preventDefault(); handleLinkClick('#contact-headquarters'); }}>Contact</a>
-          <div style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <button
-              className="btn btn-primary"
-              style={{ width: '100%' }}
-              onClick={() => { setMobileMenuOpen(false); openBookingModal(''); }}
-              id="mobile-drawer-booking-btn"
-            >
-              Join Ride
-            </button>
-          </div>
+
         </div>
       </aside >
     </>

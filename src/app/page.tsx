@@ -17,7 +17,7 @@ import { BrandTheme } from './types';
 
 export default function Home() {
 
-  const [activeTheme, setActiveTheme] = useState<BrandTheme>('');
+  const [activeTheme, setActiveTheme] = useState<BrandTheme>('chaloyaar');
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
   const [preselectedId, setPreselectedId] = useState('');
 
