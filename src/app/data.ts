@@ -10,7 +10,7 @@ export const SYSTEM_DESTINATIONS: Destination[] = [
     price: 5500,
     distance: 'July 2 - July 6, 2026 (Delhi)',
     date: 'July 2 - July 6, 2026',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1000',
+    image: 'https://www.bontravelindia.com/wp-content/uploads/2022/03/Shri-Tungnath-Temple-1.jpg',
     Itnary_links: 'https://drive.google.com/file/d/1Phf_ujKb8JxaGsE9iMeVYW7XQDqftFWY/view?usp=sharing',
 
     description: 'A soul-refreshing blend of nature and spirituality. Trek through rhododendron forests to the ancient TungaNath temple, then ascend to the serene Hemkund Sahib gurudwara nestled beside a glacial lake.',
@@ -30,7 +30,7 @@ export const SYSTEM_DESTINATIONS: Destination[] = [
     price: 7500,
     distance: 'July 22 - July 27, 2026 (Delhi)',
     date: 'July 22 - July 27, 2026',
-    image: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&q=80&w=1000',
+    image: 'https://www.viralbake.com/wp-content/uploads/Chamolis-Valley-of-Flowers.jpg',
     Itnary_links: 'https://drive.google.com/file/d/1f0mbelbFma3ILyxvbt4D3UyxIUJTbFPW/view?usp=sharing',
 
     description: 'Discover the ethereal beauty of the Valley of Flowers, a UNESCO World Heritage site bursting with alpine blooms. Then trek to Gangotri, the sacred source of the Ganges, and witness the majestic glaciers that feed this holy river.',
