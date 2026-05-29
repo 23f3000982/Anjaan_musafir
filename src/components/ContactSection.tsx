@@ -115,12 +115,7 @@ export default function ContactSection() {
               <div className="contact-icon-box">
                 <Clock size={22} />
               </div>
-              <div>
-                <div className="contact-detail-title">OFFICE OPENING INTERVALS</div>
-                <div className="contact-detail-text" style={{ fontSize: '14px', color: 'var(--text-muted)' }}>
-                  Riders Lounge open Mon - Sat (10:00 AM - 08:30 PM). Sunday sessions are exclusively campfire acoustic classes in Indiranagar backyards.
-                </div>
-              </div>
+
             </div>
           </div>
 

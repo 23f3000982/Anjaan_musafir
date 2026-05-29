@@ -111,7 +111,7 @@ export default function RiderDestinations({ openBookingModal }: RiderDestination
                       onClick={() => openBookingModal(route.id)}
                       id={`join-convoy-btn-${route.id}`}
                     >
-                      Join the Convoy
+                      Join Trip
                     </button>
                     <button
                       className="btn btn-primary"
