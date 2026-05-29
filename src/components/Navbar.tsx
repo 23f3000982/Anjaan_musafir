@@ -51,7 +51,7 @@ export default function Navbar({ activeTheme, setActiveTheme, openBookingModal }
             <div className="btn-brand-toggle" id="brand-theme-flip-control">
               <a href="https://befikarbikers.com" target="_blank" rel="noopener noreferrer">
                 <button
-                  className={`toggle-option ${activeTheme === 'riders' ? 'active' : ''}`}
+                  className="toggle-option"
 
                   title="Swith to Riders Theme"
                   id="toggle-theme-riders-btn"
