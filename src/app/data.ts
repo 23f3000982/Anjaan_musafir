@@ -13,7 +13,7 @@ export const SYSTEM_DESTINATIONS: Destination[] = [
     image: 'https://www.bontravelindia.com/wp-content/uploads/2022/03/Shri-Tungnath-Temple-1.jpg',
     Itnary_links: 'https://drive.google.com/file/d/1Phf_ujKb8JxaGsE9iMeVYW7XQDqftFWY/view?usp=sharing',
 
-    description: 'A soul-refreshing blend of nature and spirituality. Trek through rhododendron forests to the ancient TungaNath temple, then ascend to the serene Hemkund Sahib gurudwara nestled beside a glacial lake.',
+    description: 'Embark on a spiritual journey to the sacred TungaNath temple, perched at 3,680 meters. Trek through vibrant rhododendron blooms and witness the stunning alpine lake surrounded by majestic peaks. Conclude your adventure with a serene visit to Rishikesh, the yoga capital of the world.',
     highlights: [
       'Trek through vibrant rhododendron blooms',
       'Visit the 1,000-year-old TungaNath temple',
