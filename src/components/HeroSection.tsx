@@ -84,11 +84,11 @@ export default function HeroSection({ openBookingModal }: HeroSectionProps) {
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Award size={16} style={{ color: 'var(--primary-color)' }} />
-            <span><strong>100% Verified</strong> Riders & Cohorts</span>
+            <span><strong>100% Verified</strong> Tour Guides</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <ShieldCheck size={16} style={{ color: 'var(--primary-color)' }} />
-            <span><strong>24/7 Road</strong> & Medical Backup</span>
+            <span><strong>24/7 </strong> Medical Backup</span>
           </div>
         </div>
 
