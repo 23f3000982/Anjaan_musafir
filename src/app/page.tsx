@@ -1,7 +1,8 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import Image from 'next/image';
 
-import { Bike, Compass, Heart, MapPin, Mail, Phone, Map, ShieldAlert } from 'lucide-react';
+import { MapPin, Mail, Phone, } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import RiderDestinations from '@/components/RiderDestinations';
@@ -21,10 +22,7 @@ export default function Home() {
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
   const [preselectedId, setPreselectedId] = useState('');
 
-  // Sychronize active brand theme with the document body's global CSS styles
-  useEffect(() => {
-    document.body.className = activeTheme === 'riders' ? 'theme-riders' : 'theme-chaloyaar';
-  }, [activeTheme]);
+
 
   // Handle open modal with specific trip ID pre-filled
   const handleOpenBookingModal = (id: string) => {
@@ -38,7 +36,7 @@ export default function Home() {
   };
 
   return (
-    <div className="app-container" id="chalo-yaar-app-container">
+    <div className="app-container" >
       {/* Navigation & Header */}
       <Navbar
         activeTheme={activeTheme}
@@ -61,9 +59,9 @@ export default function Home() {
         />
 
         {/* Holiday Verticals (ChaloYaar General Focus) */}
-        <BrandIntegration
+        {/* <BrandIntegration
           openBookingModal={handleOpenBookingModal}
-        />
+        /> */}
 
         {/* Dynamic Experience Photo Gallery Bento */}
         <TourExperienceGallery />
@@ -88,10 +86,10 @@ export default function Home() {
           <div id="footer-logo-desc-col">
             <div className="logo-wrap" style={{ marginBottom: '16px' }}>
               <div className="logo-graphic">
-                {activeTheme === 'riders' ? <Bike size={18} /> : <Compass size={18} />}
+                <Image src="/logo.jpeg" alt="Logo" width={22} height={22} />
               </div>
               <span className="logo-text">
-                {activeTheme === 'riders' ? 'Befikar Bikers' : 'Anjan Musafir'}
+                Anjaan Musafir
               </span>
             </div>
             <p className="footer-col-desc">
@@ -127,15 +125,15 @@ export default function Home() {
             <ul className="footer-col-links" style={{ gap: '16px' }}>
               <li className="footer-col-link" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <MapPin size={16} />
-                <span>Indiranagar Double Road, Bangalore, 560038</span>
+                <span>India</span>
               </li>
               <li className="footer-col-link" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <Phone size={16} />
-                <span>+91 80 44520 900</span>
+                <span>+91 8933028353</span>
               </li>
               <li className="footer-col-link" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <Mail size={16} />
-                <span>go@befikarbikers.com</span>
+                <span>info@befikarbikers.com</span>
               </li>
             </ul>
           </div>

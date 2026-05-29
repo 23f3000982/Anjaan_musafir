@@ -1,4 +1,4 @@
-export type BrandTheme = 'riders' | 'chaloyaar';
+export type BrandTheme = 'chaloyaar';
 
 export interface Destination {
     id: string;
@@ -10,6 +10,7 @@ export interface Destination {
     distance: string; // e.g. "1,200 km"
     date: string; // e.g. "June 15 - June 25, 2026"
     image: string;
+    Itnary_links: string;
     description: string;
     highlights: string[];
 }

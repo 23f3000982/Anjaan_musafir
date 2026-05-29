@@ -87,7 +87,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <div className="contact-detail-title">MAIN ADVENTURE OFFICE</div>
-                <div className="contact-detail-text">Indiranagar 80ft Double Road, Bangalore, KA, India</div>
+                <div className="contact-detail-text"> India</div>
               </div>
             </div>
 
@@ -97,7 +97,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <div className="contact-detail-title">TEL & WHATSAPP SUPPORT</div>
-                <div className="contact-detail-text">+91 80 44520 900 / +91 98450 11900</div>
+                <div className="contact-detail-text">+91 8933028353</div>
               </div>
             </div>
 
@@ -107,7 +107,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <div className="contact-detail-title">ELECTRONIC MAIL</div>
-                <div className="contact-detail-text">go@befikarbikers.com</div>
+                <div className="contact-detail-text">info@befikarbikers.com</div>
               </div>
             </div>
 

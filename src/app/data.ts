@@ -2,77 +2,47 @@ import { Destination, TravelCategory, UpcomingLeisureTrip, PastGalleryItem } fro
 
 export const SYSTEM_DESTINATIONS: Destination[] = [
   {
-    id: 'leh-ladakh',
-    title: 'Leh-Ladakh Expedition',
-    subtitle: 'Khardung La & Pangong Lake',
-    duration: '10 Days / 9 Nights',
-    difficulty: 'Extreme',
-    price: 34500,
-    distance: '1,450 km',
-    date: 'June 18 - June 28, 2026',
-    image: 'https://images.unsplash.com/photo-1594950195709-a14f66c242d7?auto=format&fit=crop&q=80&w=1000',
-    description: 'Ride across the highest motorable passes on Earth, barren moon-like valleys, and dramatic cold deserts alongside an adrenaline-driven convoy.',
-    highlights: [
-      'Scale Khardung La at 17,582 feet',
-      'Camp beside the mesmerizing Pangong Lake',
-      'Navigate historic Gata Loops (21 hairpin curves)',
-      'Bond over acoustic sessions by the riverside campfire'
-    ]
-  },
-  {
-    id: 'spiti-loop',
-    title: 'Spiti Valley Loop',
-    subtitle: 'Shimla to Manali Raw Trail',
-    duration: '9 Days / 8 Nights',
-    difficulty: 'Extreme',
-    price: 29800,
-    distance: '1,120 km',
-    date: 'July 12 - July 20, 2026',
-    image: 'https://images.unsplash.com/photo-1581404476143-df3137e25b45?auto=format&fit=crop&q=80&w=1000',
-    description: 'Navigate pure river crossings, high monasteries, ancient vertical cliffs, and camp under the stars at pristine Chandratal Lake.',
-    highlights: [
-      'Ride through the world’s highest post office at Hikkim',
-      'Cross the perilous Kunzum Pass (14,931 ft)',
-      'Engage with native monks at centuries-old monasteries',
-      'Stumble upon fossil fossils in Langza village'
-    ]
-  },
-  {
-    id: 'kerala-coast',
-    title: 'Coastal Monsoon Cruise',
-    subtitle: 'Vagamon Hills to Varkala Cliff',
-    duration: '7 Days / 6 Nights',
+    id: 'TungaNath-Hemkund',
+    title: 'TungaNath & Hemkund Sahib',
+    subtitle: 'Sacred Alpine Trek & Spiritual Sojourn',
+    duration: '4 Days / 3 Nights',
     difficulty: 'Moderate',
-    price: 22000,
-    distance: '850 km',
-    date: 'September 05 - September 11, 2026',
-    image: 'https://images.unsplash.com/photo-1602213756913-eb02654d8512?auto=format&fit=crop&q=80&w=1000',
-    description: 'Cruise winding tropical passes of Vagamon, glide through mist-shrouded spice estates, and end on the soaring cliffs of Varkala Beach.',
+    price: 5500,
+    distance: '120 km',
+    date: 'July 2 - July 6, 2026',
+    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1000',
+    Itnary_links: '/itnary/Tunganath.pdf',
+
+    description: 'A soul-refreshing blend of nature and spirituality. Trek through rhododendron forests to the ancient TungaNath temple, then ascend to the serene Hemkund Sahib gurudwara nestled beside a glacial lake.',
     highlights: [
-      'Navigate the 12 Hairpin curves of Vagamon Pine Hills',
-      'Inhale aromatic tea plantations in Munnar heights',
-      'Sunset bonfires on untouched sandy beaches',
-      'Indulge in authentic local Malabar delicacies'
+      'Trek through vibrant rhododendron blooms',
+      'Visit the 1,000-year-old TungaNath temple',
+      'Experience the tranquil Hemkund Sahib gurudwara',
+      'Enjoy panoramic views of the Himalayan peaks'
     ]
   },
   {
-    id: 'thar-desert',
-    title: 'Thar Desert Sandstorm',
-    subtitle: 'Jaipur - Jaisalmer - Jodhpur Runway',
-    duration: '8 Days / 7 Nights',
-    difficulty: 'Easy',
-    price: 24500,
-    distance: '980 km',
-    date: 'November 14 - November 21, 2026',
-    image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&q=80&w=1000',
-    description: 'Unleash your engine across empty golden sands, sleep under brilliant desert skies, and experience local folk music around campfire dunes.',
+    id: 'ValleyOfFlowers-Gangotri',
+    title: 'Valley of Flowers & Gangotri',
+    subtitle: 'Alpine Paradise & Sacred Ganga Origins',
+    duration: '5 Days / 4 Nights',
+    difficulty: 'Challenging',
+    price: 7500,
+    distance: '150 km',
+    date: 'July 22 - July 27, 2026',
+    image: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&q=80&w=1000',
+    Itnary_links: '/itnary/valley-of-flowers.pdf',
+
+    description: 'Discover the ethereal beauty of the Valley of Flowers, a UNESCO World Heritage site bursting with alpine blooms. Then trek to Gangotri, the sacred source of the Ganges, and witness the majestic glaciers that feed this holy river.',
     highlights: [
-      'Throttle through flat arrow-straight desert runways',
-      'Sleep under the stars at Sam Sand Dunes Jaisalmer',
-      'Dine in ancient Rajasthani heritage forts',
-      'Camel safaris across the border territories'
+      'Explore the vibrant alpine flora of the Valley of Flowers',
+      'Trek to the sacred Gangotri temple',
+      'Witness the stunning Gaumukh glacier',
+      'Experience the spiritual ambiance of the Himalayas'
     ]
-  }
+    ,
+  },
+
 ];
 
 export const GENERAL_CATEGORIES: TravelCategory[] = [
@@ -181,33 +151,7 @@ export const UPCOMING_LEISURE_TRIPS: UpcomingLeisureTrip[] = [
 ];
 
 export const PAST_BIKE_GALLERY: PastGalleryItem[] = [
-  {
-    id: 'pb-1',
-    title: 'Himalayan Ridge Conquer',
-    location: 'Khardung La Pass (17,582 ft)',
-    image: 'https://images.unsplash.com/photo-1594950195709-a14f66c242d7?auto=format&fit=crop&q=80&w=1000',
-    participantCount: 18,
-    memoryNote: 'Faced sudden mild snowfall at the ridge but conquered together. The tea at peak café was legendary!',
-    heartCount: 142
-  },
-  {
-    id: 'pb-2',
-    title: 'Gata Loops Curve Slings',
-    location: 'Manali-Leh Highway, Ladakh',
-    image: 'https://images.unsplash.com/photo-1581404476143-df3137e25b45?auto=format&fit=crop&q=80&w=1000',
-    participantCount: 15,
-    memoryNote: '21 continuous sharp loops carved perfectly. Every riders coordination was spectacular.',
-    heartCount: 98
-  },
-  {
-    id: 'pb-3',
-    title: 'Sunset Dune Formation',
-    location: 'Sam Sand Dunes, Jaisalmer',
-    image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&q=80&w=1000',
-    participantCount: 22,
-    memoryNote: 'Parked our cruisers side by-side looking over golden dunes. Folk singers performed all night.',
-    heartCount: 204
-  }
+
 ];
 
 export const PAST_LEISURE_GALLERY: PastGalleryItem[] = [

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { X, CheckCircle2, ChevronRight, ChevronLeft, Calendar, ShieldCheck, Bike, Flame } from 'lucide-react';
+import { X, ChevronRight, ChevronLeft, ShieldCheck, Flame } from 'lucide-react';
 import { SYSTEM_DESTINATIONS, GENERAL_CATEGORIES, UPCOMING_LEISURE_TRIPS } from "../app/data";
-import { BrandTheme, BookingState } from '../app/types';
+import { BookingState } from '../app/types';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -350,7 +350,7 @@ export default function BookingModal({ isOpen, onClose, preselectedId }: Booking
                       /* Show license fields only for bike tracks */
                       <div id="motorcycle-specific-fields">
                         <div className="form-field">
-                          <label className="form-label" htmlFor="licenseNumber">RIDER'S DRIVING LICENSE NUMBER</label>
+                          <label className="form-label" htmlFor="licenseNumber">RIDER&apos;S DRIVING LICENSE NUMBER</label>
                           <input
                             type="text"
                             id="licenseNumber"

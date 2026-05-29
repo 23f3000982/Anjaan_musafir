@@ -9,18 +9,16 @@ interface HeroSectionProps {
   openBookingModal: (id: string) => void;
 }
 
-export default function HeroSection({ activeTheme, setActiveTheme, openBookingModal }: HeroSectionProps) {
-  const isRiders = activeTheme === 'riders';
+export default function HeroSection({ openBookingModal }: HeroSectionProps) {
 
-  const ridersBg = 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=1920'; // Rugged custom motorcycle cruise landscape
-  const chaloyaarBg = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1920'; // Clean premium highway sunset roadtrip landscape
+
 
   const handleCtaClick = () => {
     openBookingModal('');
   };
 
   const handleSecondaryScroll = () => {
-    const selector = isRiders ? '#destinations' : '#chaloyaar-explore';
+    const selector = '#chaloyaar-explore';
     const element = document.querySelector(selector);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -29,29 +27,19 @@ export default function HeroSection({ activeTheme, setActiveTheme, openBookingMo
 
   return (
     <section
-      className={`hero-container ${isRiders ? 'riders-theme-active' : 'chaloyaar-theme-active'}`}
+      className="hero-container  chaloyaar-theme-active"
       id="hero"
     >
       {/* Background Images with smooth absolute fading opacity */}
+
       <Image
-        src={ridersBg}
-        alt="Rugged motorcycle riders packing convoy"
-        className="hero-bg-media"
-        fill
-        sizes="100vw"
-        priority
-        unoptimized
-        style={{ opacity: isRiders ? 1 : 0, transition: 'opacity 0.8s ease-in-out', objectFit: 'cover' }}
-        id="hero-bg-riders-media"
-      />
-      <Image
-        src={chaloyaarBg}
+        src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1920"
         alt="Sleek travel highway SUV expedition"
         className="hero-bg-media"
         fill
         sizes="100vw"
         unoptimized
-        style={{ opacity: !isRiders ? 1 : 0, transition: 'opacity 0.8s ease-in-out', objectFit: 'cover' }}
+        style={{ opacity: 1, transition: 'opacity 0.8s ease-in-out', objectFit: 'cover' }}
         id="hero-bg-chaloyaar-media"
       />
 
@@ -62,33 +50,24 @@ export default function HeroSection({ activeTheme, setActiveTheme, openBookingMo
       <div className="hero-content-inner" id="hero-text-and-actions">
         {/* Dynamic Tagline */}
         <div className="hero-tagline" id="hero-brand-top-tag">
-          {isRiders ? (
-            <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <Flame size={16} /> Ride With Wild Strangers Across India
-            </span>
-          ) : (
-            <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <ShieldCheck size={16} /> Curated Cohort Holidays & Easy Packages
-            </span>
-          )}
+
+          <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <ShieldCheck size={16} /> Curated Cohort Holidays & Easy Packages
+          </span>
+
         </div>
 
         {/* Dynamic Title */}
         <h1 className="hero-title" id="hero-main-title">
-          {isRiders ? (
-            <>Ride the Adventure<br />Premium bike trips for the modern explorers.</>
-          ) : (
-            <>EXPLORE INDIA TOGETHER.<br />WORRY ABOUT NOTHING.</>
-          )}
+
+          EXPLORE INDIA TOGETHER.<br />WORRY ABOUT NOTHING.
+
         </h1>
 
         {/* Dynamic Description */}
         <p className="hero-desc" id="hero-description-paragraph">
-          {isRiders ? (
-            'Befikar Bikers is a comprehensive adventure travel and community-building service. We curate end-to-end motorcycle and high-altitude trekking expeditions tailored for young adults and working professionals.'
-          ) : (
-            'Immersive group trips and custom vacations with flawless logistics, handpicked boutique stays, and 24/7 on-road support.'
-          )}
+
+          Immersive group trips and custom vacations with flawless logistics, handpicked boutique stays, and 24/7 on-road support.
         </p>
 
         {/* Custom Badges for Brand Credibility */}
@@ -120,7 +99,7 @@ export default function HeroSection({ activeTheme, setActiveTheme, openBookingMo
             onClick={handleCtaClick}
             id="hero-primary-cta"
           >
-            {isRiders ? 'Join The Pack' : 'Plan My Escape'}
+            Plan My Escape
             <ArrowRight size={16} />
           </button>
 
@@ -129,7 +108,7 @@ export default function HeroSection({ activeTheme, setActiveTheme, openBookingMo
             onClick={handleSecondaryScroll}
             id="hero-secondary-cta"
           >
-            {isRiders ? 'Explore Routes' : 'View Holiday Sectors'}
+            View Holiday Sectors
           </button>
         </div>
       </div>

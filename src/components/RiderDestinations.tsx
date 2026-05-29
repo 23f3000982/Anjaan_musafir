@@ -113,14 +113,16 @@ export default function RiderDestinations({ openBookingModal }: RiderDestination
                     >
                       Join Trip
                     </button>
-                    <button
-                      className="btn btn-primary"
-                      style={{ width: '100%', padding: '12px 18px', fontSize: '13px' }}
-                      onClick={() => openBookingModal(route.id)}
-                      id={`join-convoy-btn-${route.id}`}
-                    >
-                      Download Itinerary
-                    </button>
+                    <a href={route.Itnary_links} target="_blank" rel="noopener noreferrer" style={{ width: '100%' }}>
+                      <button
+                        className="btn btn-primary"
+                        style={{ width: '100%', padding: '12px 18px', fontSize: '13px' }}
+                        id={`download-itinary-btn-${route.id}`}
+                      >
+                        Download Itinerary
+                      </button>
+                    </a>
+
                   </div>
                 </div>
               </article>
@@ -149,7 +151,7 @@ export default function RiderDestinations({ openBookingModal }: RiderDestination
                     <MapPin size={11} style={{ display: 'inline', marginRight: '3px', verticalAlign: 'text-top' }} />
                     {item.location}
                   </div>
-                  <p className="memory-card-quote">"{item.memoryNote}"</p>
+                  <p className="memory-card-quote">{item.memoryNote}</p>
 
                   <div className="memory-card-footer">
                     <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>MEMBER MEMORY WALLET</span>
