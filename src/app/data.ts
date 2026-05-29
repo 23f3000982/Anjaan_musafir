@@ -3,7 +3,7 @@ import { Destination, TravelCategory, UpcomingLeisureTrip, PastGalleryItem } fro
 export const SYSTEM_DESTINATIONS: Destination[] = [
   {
     id: 'TungaNath-Hemkund',
-    title: 'TungaNath & Hemkund Sahib',
+    title: 'TungaNath & Rishikesh',
     subtitle: 'Sacred Alpine Trek & Spiritual Sojourn',
     duration: '4 Days / 3 Nights',
     difficulty: 'Moderate',
@@ -11,19 +11,19 @@ export const SYSTEM_DESTINATIONS: Destination[] = [
     distance: '120 km',
     date: 'July 2 - July 6, 2026',
     image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1000',
-    Itnary_links: '/itnary/Tunganath.pdf',
+    Itnary_links: 'https://anjaan-musafir.vercel.app/itnary/Tunganath.pdf',
 
     description: 'A soul-refreshing blend of nature and spirituality. Trek through rhododendron forests to the ancient TungaNath temple, then ascend to the serene Hemkund Sahib gurudwara nestled beside a glacial lake.',
     highlights: [
       'Trek through vibrant rhododendron blooms',
       'Visit the 1,000-year-old TungaNath temple',
-      'Experience the tranquil Hemkund Sahib gurudwara',
-      'Enjoy panoramic views of the Himalayan peaks'
+      'Witness the stunning alpine lake and surrounding peaks',
+
     ]
   },
   {
     id: 'ValleyOfFlowers-Gangotri',
-    title: 'Valley of Flowers & Gangotri',
+    title: 'Valley of Flowers & Hemkund Sahib & BadriNath',
     subtitle: 'Alpine Paradise & Sacred Ganga Origins',
     duration: '5 Days / 4 Nights',
     difficulty: 'Challenging',
@@ -31,14 +31,15 @@ export const SYSTEM_DESTINATIONS: Destination[] = [
     distance: '150 km',
     date: 'July 22 - July 27, 2026',
     image: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&q=80&w=1000',
-    Itnary_links: '/itnary/valley-of-flowers.pdf',
+    Itnary_links: 'https://anjaan-musafir.vercel.app/itnary/valley-of-flowers.pdf',
 
     description: 'Discover the ethereal beauty of the Valley of Flowers, a UNESCO World Heritage site bursting with alpine blooms. Then trek to Gangotri, the sacred source of the Ganges, and witness the majestic glaciers that feed this holy river.',
     highlights: [
       'Explore the vibrant alpine flora of the Valley of Flowers',
       'Trek to the sacred Gangotri temple',
       'Witness the stunning Gaumukh glacier',
-      'Experience the spiritual ambiance of the Himalayas'
+      'Experience the spiritual ambiance of the Himalayas',
+      'Visit the revered BadriNath temple nestled in the mountains'
     ]
     ,
   },

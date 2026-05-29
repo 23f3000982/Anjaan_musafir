@@ -31,13 +31,13 @@ export default function RiderDestinations({ openBookingModal }: RiderDestination
         {/* Rider Section Header */}
         <div className="section-header" id="riders-routes-section-header">
           <span className="section-tag" id="riders-routes-pre-title">
-            <Sparkles size={11} style={{ display: 'inline', marginRight: '4px' }} /> Befikar Bikers Center
+            <Sparkles size={11} style={{ display: 'inline', marginRight: '4px' }} /> Anjaan Musafirs
           </span>
           <h2 className="section-title" id="riders-routes-h2-title">
-            BEFIKAR BIKERS RIDES
+            Anjaan Musafirs Tours
           </h2>
           <p className="section-desc" id="riders-routes-p-desc">
-            Professional mechanics, backup vehicles, and boutique stays are fully sorted. Pick your upcoming trail or view past memories.
+            Join our Anjaan Musafirs Tours and discover the unbeaten paths. From thrilling Himalayan passes to serene coastal rides, our curated tours offer unforgettable journeys for every rider.
           </p>
         </div>
 
@@ -48,14 +48,14 @@ export default function RiderDestinations({ openBookingModal }: RiderDestination
             onClick={() => setActiveTab('upcoming')}
             id="riders-tab-btn-upcoming"
           >
-            📅 Upcoming Rides
+            📅 Upcoming Tours
           </button>
           <button
             className={`brand-tab-trigger ${activeTab === 'past' ? 'active' : ''}`}
             onClick={() => setActiveTab('past')}
             id="riders-tab-btn-past"
           >
-            📸 Past Ride Gallery
+            📸 Past Tour Gallery
           </button>
         </div>
 
