@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import { Menu, X, Bike, Compass } from 'lucide-react';
 import Image from 'next/image';
+import type { BrandTheme } from '@/app/types';
 
 
+interface NavbarProps {
+  activeTheme: BrandTheme;
+  setActiveTheme: React.Dispatch<React.SetStateAction<BrandTheme>>;
+  openBookingModal: (id: string) => void;
+}
 
-export default function Navbar() {
+export default function Navbar({ activeTheme, setActiveTheme, openBookingModal }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  void setActiveTheme;
+  void openBookingModal;
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
@@ -43,7 +51,7 @@ export default function Navbar() {
             <div className="btn-brand-toggle" id="brand-theme-flip-control">
               <a href="https://befikarbikers.com" target="_blank" rel="noopener noreferrer">
                 <button
-                  className="toggle-option"
+                  className={`toggle-option ${activeTheme === 'riders' ? 'active' : ''}`}
 
                   title="Swith to Riders Theme"
                   id="toggle-theme-riders-btn"
@@ -53,7 +61,7 @@ export default function Navbar() {
                 </button></a>
               <a href="https://anjaanmusafir.com" target="_blank" rel="noopener noreferrer">
                 <button
-                  className="toggle-option active"
+                  className={`toggle-option ${activeTheme === 'chaloyaar' ? 'active' : ''}`}
                   title="Switch to General Tours"
                   id="toggle-theme-chaloyaar-btn"
                 >

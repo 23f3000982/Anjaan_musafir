@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, CheckCircle2, ChevronRight, ChevronLeft, Calendar, ShieldCheck, Bike, Flame } from 'lucide-react';
 import { SYSTEM_DESTINATIONS, GENERAL_CATEGORIES, UPCOMING_LEISURE_TRIPS } from "../app/data";
-import { BrandTheme } from '../app/types';
+import { BrandTheme, BookingState } from '../app/types';
 
 interface BookingModalProps {
   isOpen: boolean;

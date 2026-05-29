@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Users, Compass, Home, Heart, GraduationCap, Briefcase, Award, Calendar, MapPin, Sparkles } from 'lucide-react';
-import { SYSTEM_DESTINATIONS, GENERAL_CATEGORIES, UPCOMING_LEISURE_TRIPS } from "../app/data";
-import { BrandTheme } from '../app/types';
+import { SYSTEM_DESTINATIONS, GENERAL_CATEGORIES, UPCOMING_LEISURE_TRIPS, PAST_LEISURE_GALLERY } from "../app/data";
+import { BrandTheme, TravelCategory } from '../app/types';
 
 interface BrandIntegrationProps {
   openBookingModal: (id: string) => void;
