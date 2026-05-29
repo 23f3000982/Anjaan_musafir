@@ -1,6 +1,0 @@
-{
-  "name": "Befikar Bikers & Anjan Musafir",
-  "description": "Premium travel portal for Befikar Bikers motorcycle convoys and Anjan Musafir custom/group tours across India.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, Compass, MapPin, Sparkles, Heart, Users } from 'lucide-react';
-import { SYSTEM_DESTINATIONS, PAST_BIKE_GALLERY } from '../data';
-import { Destination } from '../types';
+import { SYSTEM_DESTINATIONS, GENERAL_CATEGORIES, UPCOMING_LEISURE_TRIPS } from "../app/data";
+import { BrandTheme } from '../app/types';
 
 interface RiderDestinationsProps {
   openBookingModal: (id: string) => void;

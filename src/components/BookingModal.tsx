@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, CheckCircle2, ChevronRight, ChevronLeft, Calendar, ShieldCheck, Bike, Flame } from 'lucide-react';
-import { SYSTEM_DESTINATIONS, GENERAL_CATEGORIES, UPCOMING_LEISURE_TRIPS } from '../data';
-import { BookingState } from '../types';
+import { SYSTEM_DESTINATIONS, GENERAL_CATEGORIES, UPCOMING_LEISURE_TRIPS } from "../app/data";
+import { BrandTheme } from '../app/types';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -48,10 +48,10 @@ export default function BookingModal({ isOpen, onClose, preselectedId }: Booking
   const selectedRouteObj = SYSTEM_DESTINATIONS.find(d => d.id === formData.destinationId);
   const selectedLeisureObj = UPCOMING_LEISURE_TRIPS.find(t => t.id === formData.destinationId);
   const selectedCategoryObj = GENERAL_CATEGORIES.find(c => `category-${c.id}` === formData.destinationId);
-  const currentSelectionLabel = selectedRouteObj 
-    ? selectedRouteObj.title 
-    : (selectedLeisureObj 
-      ? selectedLeisureObj.title 
+  const currentSelectionLabel = selectedRouteObj
+    ? selectedRouteObj.title
+    : (selectedLeisureObj
+      ? selectedLeisureObj.title
       : (selectedCategoryObj ? `${selectedCategoryObj.title} Holiday` : 'Custom India Tour'));
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -165,7 +165,7 @@ export default function BookingModal({ isOpen, onClose, preselectedId }: Booking
 
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, overflow: 'hidden' }} id="booking-convoy-form">
           <div className="booking-form-body" id="booking-form-scroller">
-            
+
             {/* Success screen */}
             {formSubmitted ? (
               <div className="booking-success-wrap" id="reservation-success-pane">
@@ -180,7 +180,7 @@ export default function BookingModal({ isOpen, onClose, preselectedId }: Booking
                 {/* Reservation Summary Slip receipt */}
                 <div className="details-summary-card" id="success-details-summary-card">
                   <div className="details-summary-title">RIDER RESERVATION RECEIPT</div>
-                  
+
                   <div className="details-summary-row">
                     <span className="summary-label">Convoy Selection</span>
                     <span className="summary-value" style={{ color: 'var(--primary-color)', fontWeight: 700 }}>{currentSelectionLabel}</span>
@@ -315,28 +315,28 @@ export default function BookingModal({ isOpen, onClose, preselectedId }: Booking
                     <div className="form-field">
                       <label className="form-label">YOUR RIDING EXPERIENCE LEVEL</label>
                       <div className="experience-grid" id="rider-experience-custom-radio-grid">
-                        <div 
+                        <div
                           className={`experience-option ${formData.experienceLevel === 'Beginner' ? 'selected' : ''}`}
                           onClick={() => handleSelectExperience('Beginner')}
                         >
                           <span className="experience-title">Beginner</span>
                           <span className="experience-desc">Limited highway miles. Prefer light trail speeds around 40-60 km/h.</span>
                         </div>
-                        <div 
+                        <div
                           className={`experience-option ${formData.experienceLevel === 'Intermediate' ? 'selected' : ''}`}
                           onClick={() => handleSelectExperience('Intermediate')}
                         >
                           <span className="experience-title">Intermediate</span>
                           <span className="experience-desc">Cruised 3,000+ km. Comfortable with twisty mountains & water levels.</span>
                         </div>
-                        <div 
+                        <div
                           className={`experience-option ${formData.experienceLevel === 'Expert' ? 'selected' : ''}`}
                           onClick={() => handleSelectExperience('Expert')}
                         >
                           <span className="experience-title">Expert Pack</span>
                           <span className="experience-desc">Can handle mud-slides, rain, and steep altitude hairpin loops without sweating.</span>
                         </div>
-                        <div 
+                        <div
                           className={`experience-option ${formData.experienceLevel === 'Pro-Rider' ? 'selected' : ''}`}
                           onClick={() => handleSelectExperience('Pro-Rider')}
                         >
@@ -479,9 +479,9 @@ export default function BookingModal({ isOpen, onClose, preselectedId }: Booking
             <div className="booking-form-footer" id="booking-modal-action-footer">
               <div>
                 {currentStep > 1 && (
-                  <button 
-                    type="button" 
-                    className="btn btn-secondary" 
+                  <button
+                    type="button"
+                    className="btn btn-secondary"
                     onClick={handlePrevStep}
                     id="booking-form-back-btn"
                   >
@@ -491,17 +491,17 @@ export default function BookingModal({ isOpen, onClose, preselectedId }: Booking
               </div>
               <div>
                 {currentStep < 3 ? (
-                  <button 
-                    type="button" 
-                    className="btn btn-primary" 
+                  <button
+                    type="button"
+                    className="btn btn-primary"
                     onClick={handleNextStep}
                     id="booking-form-next-btn"
                   >
                     Next Step <ChevronRight size={16} />
                   </button>
                 ) : (
-                  <button 
-                    type="submit" 
+                  <button
+                    type="submit"
                     className="btn btn-primary"
                     id="booking-form-submit-btn"
                   >

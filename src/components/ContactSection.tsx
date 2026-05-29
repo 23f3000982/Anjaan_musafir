@@ -111,12 +111,7 @@ export default function ContactSection() {
               </div>
             </div>
 
-            <div className="contact-info-card" id="contact-coordinate-hours">
-              <div className="contact-icon-box">
-                <Clock size={22} />
-              </div>
 
-            </div>
           </div>
 
           {/* Right Side: High Fidelity Inquiry Form */}

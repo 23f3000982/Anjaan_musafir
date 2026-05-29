@@ -1,6 +1,7 @@
 import React from 'react';
+import Image from 'next/image';
 import { ArrowRight, ShieldCheck, Award, Flame } from 'lucide-react';
-import { BrandTheme } from '../types';
+import { BrandTheme } from '../app/types';
 
 interface HeroSectionProps {
   activeTheme: BrandTheme;
@@ -32,20 +33,25 @@ export default function HeroSection({ activeTheme, setActiveTheme, openBookingMo
       id="hero"
     >
       {/* Background Images with smooth absolute fading opacity */}
-      <img
+      <Image
         src={ridersBg}
         alt="Rugged motorcycle riders packing convoy"
         className="hero-bg-media"
-        style={{ opacity: isRiders ? 1 : 0, transition: 'opacity 0.8s ease-in-out' }}
-        referrerPolicy="no-referrer"
+        fill
+        sizes="100vw"
+        priority
+        unoptimized
+        style={{ opacity: isRiders ? 1 : 0, transition: 'opacity 0.8s ease-in-out', objectFit: 'cover' }}
         id="hero-bg-riders-media"
       />
-      <img
+      <Image
         src={chaloyaarBg}
         alt="Sleek travel highway SUV expedition"
         className="hero-bg-media"
-        style={{ opacity: !isRiders ? 1 : 0, transition: 'opacity 0.8s ease-in-out' }}
-        referrerPolicy="no-referrer"
+        fill
+        sizes="100vw"
+        unoptimized
+        style={{ opacity: !isRiders ? 1 : 0, transition: 'opacity 0.8s ease-in-out', objectFit: 'cover' }}
         id="hero-bg-chaloyaar-media"
       />
 

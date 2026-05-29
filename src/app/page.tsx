@@ -1,19 +1,23 @@
+'use client';
 import React, { useState, useEffect } from 'react';
-import { Bike, Compass, Heart, MapPin, Mail, Phone, Map, ShieldAlert } from 'lucide-react';
-import { BrandTheme } from './types';
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import RiderDestinations from './components/RiderDestinations';
-import BrandIntegration from './components/BrandIntegration';
-import TrustStats from './components/TrustStats';
-import TourExperienceGallery from './components/TourExperienceGallery';
-import FAQSection from './components/FAQSection';
-import ContactSection from './components/ContactSection';
-import NewsletterSection from './components/NewsletterSection';
-import BookingModal from './components/BookingModal';
 
-export default function App() {
-  const [activeTheme, setActiveTheme] = useState<BrandTheme>('anjaan');
+import { Bike, Compass, Heart, MapPin, Mail, Phone, Map, ShieldAlert } from 'lucide-react';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import RiderDestinations from '@/components/RiderDestinations';
+import BrandIntegration from '@/components/BrandIntegration';
+import TrustStats from '@/components/TrustStats';
+import TourExperienceGallery from '@/components/TourExperienceGallery';
+import FAQSection from '@/components/FAQSection';
+import ContactSection from '@/components/ContactSection';
+import NewsletterSection from '@/components/NewsletterSection';
+import BookingModal from '@/components/BookingModal';
+import { BrandTheme } from './types';
+
+
+export default function Home() {
+
+  const [activeTheme, setActiveTheme] = useState<BrandTheme>('');
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
   const [preselectedId, setPreselectedId] = useState('');
 

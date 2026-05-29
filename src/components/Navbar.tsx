@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Bike, Compass } from 'lucide-react';
-import { BrandTheme } from '../types';
+import { BrandTheme } from '../app/types';
 
 interface NavbarProps {
   activeTheme: BrandTheme;
